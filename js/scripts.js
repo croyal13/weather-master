@@ -33,6 +33,14 @@ $.simpleWeather({
       if ( weather.code >= 0 && weather.code <= 4 ) {
          $('body').addClass('storm');   
       }
+        
+      if ( weather.code >= 19 && weather.code <= 22 ) {
+         $('body').addClass();   
+      }
+        
+      if ( weather.code >= 37 && weather.code <= 47 ) {
+         $('body').addClass();   
+      }
     },
     error: function(error) {
       // Show if weather cannot be retreived
@@ -68,6 +76,14 @@ $.simpleWeather({
       }
         
       if ( weather.code >= 0 && weather.code <= 4 ) {
+         $('body').addClass();   
+      }
+        
+      if ( weather.code >= 19 && weather.code <= 22 ) {
+         $('body').addClass();   
+      }
+        
+      if ( weather.code >= 37 && weather.code <= 47 ) {
          $('body').addClass();   
       }
     },
@@ -107,6 +123,14 @@ $.simpleWeather({
         
       if ( weather.code >= 0 && weather.code <= 4 ) {
          $('body').addClass('storm');   
+      }
+        
+      if ( weather.code >= 19 && weather.code <= 22 ) {
+         $('body').addClass();   
+      }
+        
+      if ( weather.code >= 37 && weather.code <= 47 ) {
+         $('body').addClass();   
       }
     },
     error: function(error) {
