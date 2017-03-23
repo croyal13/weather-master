@@ -12,9 +12,9 @@ $.simpleWeather({
       console.log(weather);
       
       // Display Data
-      $('.temp').text(weather.temp);
-      $('.city').text(weather.city);
-      $('i').addClass('icon-' + weather.code);
+      $('#cheney .temp').text(weather.temp);
+      $('#cheney .city').text(weather.city);
+      $('#cheney i').addClass('icon-' + weather.code);
       
       // Get Condition Code
       console.log(weather.code);
@@ -41,6 +41,42 @@ $.simpleWeather({
   
   });
 
+$.simpleWeather({
+    location: 'ellensburg',
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+      // Display Data
+      $('#ellensburg .temp').text(weather.temp);
+      $('#ellensburg .city').text(weather.city);
+      $('#ellensburg i').addClass('icon-' + weather.code);
+      
+      // Get Condition Code
+      console.log(weather.code);
+      if ( weather.code >= 30 && weather.code <= 36 ) {
+          $('body').addClass('sunny');
+      }
+       
+      if ( weather.code >= 23 && weather.code <= 29 ) {
+         $('body').addClass('cloudy');   
+      }
+        
+      if ( weather.code >= 5 && weather.code <= 18 ) {
+         $('body').addClass('rainy');   
+      }
+        
+      if ( weather.code >= 0 && weather.code <= 4 ) {
+         $('body').addClass('storm');   
+      }
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
+  
+  });
 
 // Get Geo Location
 // Check for GeoLocation Support on Browser
