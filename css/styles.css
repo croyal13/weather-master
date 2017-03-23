@@ -9,29 +9,6 @@ h1 {
 }
 
 
-.sunny {
-  background: yellow; /* Chrome 10-25, Safari 5.1-6 */
-  background: -o-linear-gradient(right, #F2994A, #F2C94C);
-  background: linear-gradient(to left, #F2994A, #F2C94C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.cloudy {
-  background: lightgray; /* Chrome 10-25, Safari 5.1-6 */
-  background: -o-linear-gradient(right, gray, white);
-  background: linear-gradient(to left, gray, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.rainy {
-  background: dodgerblue;
-    /* Chrome 10-25, Safari 5.1-6 */
-  background: -o-linear-gradient(right, #1874CD, dodgerblue);
-  background: linear-gradient(to left, #1874CD, dodgerblue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.storm {
-    background: red;
-}
-
 
 button {
   display: block;

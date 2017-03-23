@@ -56,19 +56,19 @@ $.simpleWeather({
       // Get Condition Code
       console.log(weather.code);
       if ( weather.code >= 30 && weather.code <= 36 ) {
-          $('body').addClass('sunny');
+          $('body').addClass();
       }
        
       if ( weather.code >= 23 && weather.code <= 29 ) {
-         $('body').addClass('cloudy');   
+         $('body').addClass();   
       }
         
       if ( weather.code >= 5 && weather.code <= 18 ) {
-         $('body').addClass('rainy');   
+         $('body').addClass();   
       }
         
       if ( weather.code >= 0 && weather.code <= 4 ) {
-         $('body').addClass('storm');   
+         $('body').addClass();   
       }
     },
     error: function(error) {
