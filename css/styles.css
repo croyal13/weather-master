@@ -115,44 +115,6 @@ i {
 .icon-47:before { content: "S"; }
 
 
-/* Sidr */
-$sidebar-width: 16em;
-$sidebar-width-neg: -16em;
-.sidr {
-  background: grey;
-  display: block;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  z-index: 999999;
-  width: $sidebar-width;
-  overflow-x: hidden;
-  overflow-y: auto;
-  &.left {
-    left: $sidebar-width-neg;
-    right: auto;
-  }
-}
-
-li a {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-}
-
-#sidr-show-hide {
-  text-decoration: none;
-  color: black;
-}
-
-#close {
-  text-decoration: none;
-  color: black;
-}
 
 
 

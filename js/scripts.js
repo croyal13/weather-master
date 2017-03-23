@@ -136,10 +136,3 @@ var getWeather = function(location) {
     
 };
 
-//SIDE BAR
-$('#sidr-show-hide').sidr();
-
-// Close from inside
-$('#close').sidr({
-  method: 'close'
-});
