@@ -5,16 +5,15 @@
 
 
 $.simpleWeather({
-    location: 'cheney',
+    location: 98031,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
       console.log(weather);
       
       // Display Data
-      $('#cheney .temp').text(weather.temp);
-      $('#cheney .city').text(weather.city);
-      $('#cheney i').addClass('icon-' + weather.code);
+      $('#location .temp').text(weather.temp);
+      $('#location .city').text(weather.city);
       
       // Get Condition Code
       console.log(weather.code);
@@ -35,56 +34,11 @@ $.simpleWeather({
       }
         
       if ( weather.code >= 19 && weather.code <= 22 ) {
-         $('body').addClass();   
+         $('body').addClass('fog');   
       }
         
       if ( weather.code >= 37 && weather.code <= 47 ) {
-         $('body').addClass();   
-      }
-    },
-    error: function(error) {
-      // Show if weather cannot be retreived
-      console.log('Look outside.');
-    }
-  
-  });
-
-$.simpleWeather({
-    location: 'ellensburg',
-    unit: 'f',
-    success: function(weather) {
-      // Entire weather object
-      console.log(weather);
-      
-      // Display Data
-      $('#ellensburg .temp').text(weather.temp);
-      $('#ellensburg .city').text(weather.city);
-      $('#ellensburg i').addClass('icon-' + weather.code);
-      
-      // Get Condition Code
-      console.log(weather.code);
-      if ( weather.code >= 30 && weather.code <= 36 ) {
-          $('body').addClass();
-      }
-       
-      if ( weather.code >= 23 && weather.code <= 29 ) {
-         $('body').addClass();   
-      }
-        
-      if ( weather.code >= 5 && weather.code <= 18 ) {
-         $('body').addClass();   
-      }
-        
-      if ( weather.code >= 0 && weather.code <= 4 ) {
-         $('body').addClass();   
-      }
-        
-      if ( weather.code >= 19 && weather.code <= 22 ) {
-         $('body').addClass();   
-      }
-        
-      if ( weather.code >= 37 && weather.code <= 47 ) {
-         $('body').addClass();   
+         $('body').addClass('showers');   
       }
     },
     error: function(error) {
@@ -95,50 +49,7 @@ $.simpleWeather({
   });
 
 
-$.simpleWeather({
-    location: 'seattle',
-    unit: 'f',
-    success: function(weather) {
-      // Entire weather object
-      console.log(weather);
-      
-      // Display Data
-      $('#seattle .temp').text(weather.temp);
-      $('#seattle .city').text(weather.city);
-      $('#seattle i').addClass('icon-' + weather.code);
-      
-      // Get Condition Code
-      console.log(weather.code);
-      if ( weather.code >= 30 && weather.code <= 36 ) {
-          $('body').addClass('sunny');
-      }
-       
-      if ( weather.code >= 23 && weather.code <= 29 ) {
-         $('body').addClass('cloudy');   
-      }
-        
-      if ( weather.code >= 5 && weather.code <= 18 ) {
-         $('body').addClass('rainy');   
-      }
-        
-      if ( weather.code >= 0 && weather.code <= 4 ) {
-         $('body').addClass('storm');   
-      }
-        
-      if ( weather.code >= 19 && weather.code <= 22 ) {
-         $('body').addClass();   
-      }
-        
-      if ( weather.code >= 37 && weather.code <= 47 ) {
-         $('body').addClass();   
-      }
-    },
-    error: function(error) {
-      // Show if weather cannot be retreived
-      console.log('Look outside.');
-    }
-  
-  });
+
 
 // Get Geo Location
 // Check for GeoLocation Support on Browser

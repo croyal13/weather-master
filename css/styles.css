@@ -8,6 +8,30 @@ h1 {
     font-family: "Helvetica" sans-serif; 
 }
 
+.sunny {
+    background: #FCB514;
+}
+
+.cloudy {
+     background: #949494;
+}
+
+.rainy {
+    background: dodgerblue;
+}
+
+.storm {
+    background: red;
+}
+
+.fog {
+  
+    background: #575757;
+}
+
+.showers {
+    background: white;
+}
 
 
 button {
